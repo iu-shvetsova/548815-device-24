@@ -72,8 +72,19 @@
 
 			<section class="popular">
 				<h2 class="popular__title">Популярные товары</h2>
+
+				<input type="radio" name="slide-btn" id="popular-btn-1" checked>
+				<input type="radio" name="slide-btn" id="popular-btn-2">
+				<input type="radio" name="slide-btn" id="popular-btn-3">
+
+				<div class="popular__navigation popular-nav">
+					<label for="popular-btn-1" class="popular-nav__item">Первый слайд</label>
+					<label for="popular-btn-2" class="popular-nav__item">Второй слайд</label>
+					<label for="popular-btn-3" class="popular-nav__item">Третий слайд</label>
+				</div>
+
 				<ol class="popular__list popular-list">
-					<li class="popular-list__item popular-list__item--current">
+					<li class="popular-list__item popular-list__item--current" id="slide1">
 						<div class="popular-list__image">
 							<img alt="Самая длинная селфи-палка">
 						</div>
@@ -96,7 +107,7 @@
 						<a class="popular-list__more" href="#">Подробнее</a>
 
 					</li>
-					<li class="popular-list__item">
+					<li class="popular-list__item" id="slide2">
 						<div class="popular-list__image">
 							<img alt="Мотивирующий фитнес-браслет">
 						</div>
@@ -110,7 +121,7 @@
 						</table>
 						<a class="popular-list__more" href="#">Подробнее</a>
 					</li>
-					<li class="popular-list__item">
+					<li class="popular-list__item" id="slide3">
 						<div class="popular-list__image">
 							<img alt="Квадрокоптер с мощным лазером">
 						</div>
@@ -158,41 +169,35 @@
 
 			<section class="services">
 				<h2 class="services__title">Сервисы</h2>
-				<ul class="services__navigation services-nav">
-					<li class="services-nav__item services-nav__item--current">
-						<a href="#delivery">Доставка</a>
-					</li>
-					<li class="services-nav__item">
-						<a href="#warranty">Гарантия</a>
-					</li>
-					<li class="services-nav__item">
-						<a href="#credit">Кредит</a>
-					</li>
-				</ul>
+				
+				<input type="radio" name="services-btn" id="services-btn-1" checked>
+				<input type="radio" name="services-btn" id="services-btn-2">
+				<input type="radio" name="services-btn" id="services-btn-3">
+
+				<div class="services__navigation services-nav">
+					<label for="services-btn-1" class="services-nav__item">Доставка</label>
+					<label for="services-btn-2" class="services-nav__item">Гарантия</label>
+					<label for="services-btn-3" class="services-nav__item">Оплата</label>
+				</div>
+
 				<ul class="services__list">
 					<li class="services__item services__item--current">
-						<a id="delivery">
-							<h3 class="services__subtitle">Доставка</h3>
-							<p class="services__description">
-								Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
-							</p>
-						</a>
+						<h3 class="services__subtitle">Доставка</h3>
+						<p class="services__description">
+							Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+						</p>
 					</li>
 					<li class="services__item">
-						<a id="warranty">
-							<h3 class="services__subtitle">Гарантия</h3>
-							<p class="services__description">
-								Если из-за возгарания купленного у нас товара у нас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
-							</p>
-						</a>
+						<h3 class="services__subtitle">Гарантия</h3>
+						<p class="services__description">
+							Если из-за возгарания купленного у нас товара у нас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
+						</p>
 					</li>
 					<li class="services__item">
-						<a id="credit">
-							<h3 class="services__subtitle">Кредит</h3>
-							<p class="services__description">
-								Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
-							</p>
-						</a>
+						<h3 class="services__subtitle">Кредит</h3>
+						<p class="services__description">
+							Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
+						</p>
 					</li>
 				</ul>
 
