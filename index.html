@@ -38,7 +38,7 @@
 				</ul>
 
 				<section class="navigation__catalog nav-catalog">
-					<h2 class="nav-catalog__title">Каталог товаров</h2>
+					<h2 class="nav-catalog__title"> <button type="button">Каталог товаров</button> </h2>
 
 					<ul class="nav-catalog__list">
 						<li class="nav-catalog__item">
@@ -68,16 +68,16 @@
 		</header>
 
 		<main class="main-page">
-			<h1 class="main-page__title">Device — интернет-магазин гаджетов</h1>
+			<h1 class="main-page__title visually-hidden">Device — интернет-магазин гаджетов</h1>
 
 			<section class="popular">
-				<h2 class="popular__title">Популярные товары</h2>
+				<h2 class="popular__title visually-hidden">Популярные товары</h2>
 
 				<input type="radio" name="slide-btn" id="popular-btn-1" checked>
 				<input type="radio" name="slide-btn" id="popular-btn-2">
 				<input type="radio" name="slide-btn" id="popular-btn-3">
 
-				<div class="popular__navigation popular-nav">
+				<div class="popular__navigation popular-nav visually-hidden">
 					<label for="popular-btn-1" class="popular-nav__item">Первый слайд</label>
 					<label for="popular-btn-2" class="popular-nav__item">Второй слайд</label>
 					<label for="popular-btn-3" class="popular-nav__item">Третий слайд</label>
@@ -144,7 +144,7 @@
 			</section>
 
 			<section class="catalog">
-				<h2 class="catalog__title">Каталог товаров</h2>
+				<h2 class="catalog__title visually-hidden">Каталог товаров</h2>
 				<ul class="catalog__list">
 					<li class="catalog__item">
 						<a href="#">Виртуальная реальность</a>
@@ -168,7 +168,7 @@
 			</section>
 
 			<section class="services">
-				<h2 class="services__title">Сервисы</h2>
+				<h2 class="services__title visually-hidden">Сервисы</h2>
 				
 				<input type="radio" name="services-btn" id="services-btn-1" checked>
 				<input type="radio" name="services-btn" id="services-btn-2">
@@ -204,7 +204,7 @@
 			</section>
 
 			<section class="companies">
-				<h2 class="companies__title">Производители</h2>
+				<h2 class="companies__title visually-hidden">Производители</h2>
 				<ul class="companies__list">
 					<li class="companies__item">
 						<a href="#">
@@ -255,11 +255,48 @@
 					Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
 				</p>
 
-				<div class="contacts__map">
-					<img src="img/map.jpg" width="560" height="222" alt="Наш магазин на карте">
-				</div>
+				<a href="#" class="contacts__map">
+					<img src="img/map.jpg" width="560" height="222" alt="Наш магазин на карте.">
+				</a>
 
 				<a href="#" class="contacts__more">Напишите нам</a>
+
+			</section>
+				
+			<section class="modal write-us">
+				<h2 class="write-us__title visually-hidden">Форма отправки сообщения</h2>
+
+				<button class="modal__close" type="button">Закрыть</button>
+
+				<form class="write-us__form" method="post" action="https://echo.htmlacademy.ru">
+					<p>
+						<label class="write-us__label"for="client-name">Ваше имя:</label>
+						<input name="name" id="client-name" type="text" placeholder="Имя Фамилия">
+					</p>
+					<p>
+						<label class="write-us__label" for="client-email">Ваш e-mail:</label>
+						<input name="email" id="client-email" type="text" placeholder="email@example.com">
+					</p>
+					<p>
+						<label class="write-us__label" for="client-message">Текст письма:</label>
+						<textarea name="message" id="client-message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+					</p>
+
+					<button class="modal__send" type="submit">Отправить</button>
+
+				</form>
+				
+
+			</section>
+
+			<section class="modal map">
+				<h2 class="map__title visually-hidden">Наш магазин на карте</h2>
+
+				<button class="modal__close" type="button">Закрыть</button>
+
+				<div class="map__image">
+					<img src="img/map-big.jpg" width="960" height="559" alt="Наш магазин находится по адресу ул. Строителей 15, Москва.">
+				</div>
 
 			</section>
 
@@ -300,17 +337,19 @@
 
 			<ul class="footer__social social-list">
 				<li class="social-list__item social-list__item--facebook">
-					<a href="#">Девайс на Фейсбуке</a>
+					<a href="#"><span class="visually-hidden">Девайс на Фейсбуке</span></a>
 				</li>
 				<li class="social-list__item social-list__item--instagram">
-					<a href="#">Девайс в Инстаграме</a>
+					<a href="#"><span class="visually-hidden">Девайс в Инстаграме</span></a>
 				</li>
 				<li class="social-list__item social-list__item--twitter">
-					<a href="#">Девайс в Твиттере</a>
+					<a href="#"><span class="visually-hidden">Девайс в Твиттере</span></a>
 				</li>
 			</ul>
 
-			<a href="https://htmlacademy.ru/intensive/htmlcss" class="footer__copyright">HTML Academy</a>
+			<a href="https://htmlacademy.ru/intensive/htmlcss" class="footer__copyright">
+				<span class="visually-hidden">Разработано для HTML Academy</span>
+			</a>
 
 		</footer>
 

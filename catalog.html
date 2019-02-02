@@ -24,7 +24,7 @@
 					<a href="#">Валентин Петухов</a>
 				</li>
 				<li class="actions-list__item actions-list__item--logout">
-					<a href="#">Выйти</a>
+					<button type="button">Выйти</button>
 				</li>
 				<li class="actions-list__item actions-list__item--compare">
 					<a href="#">Сравнить</a>
@@ -41,7 +41,7 @@
 			</ul>
 
 			<section class="navigation__catalog nav-catalog">
-				<h2 class="nav-catalog__title">Каталог товаров</h2>
+				<h2 class="nav-catalog__title"> <button type="button">Каталог товаров</button> </h2>
 
 				<ul class="nav-catalog__list">
 					<li class="nav-catalog__item">
@@ -95,7 +95,7 @@
 						<legend class="filter__parameter">Цвет</legend>
 						<ul class="filter__list filter-list">
 							<li class="filter-list__item filter-list__item--checkbox">
-								<input type="checkbox" id="black" name="black">
+								<input type="checkbox" id="black" name="black" checked>
 								<label for="black">Черный</label>
 							</li>
 							<li class="filter-list__item filter-list__item--checkbox">
@@ -103,11 +103,11 @@
 								<label for="white">Белый</label>
 							</li>
 							<li class="filter-list__item filter-list__item--checkbox">
-								<input type="checkbox" id="blue" name="blue">
+								<input type="checkbox" id="blue" name="blue" checked>
 								<label for="blue">Синий</label>
 							</li>
 							<li class="filter-list__item filter-list__item--checkbox">
-								<input type="checkbox" id="red" name="red">
+								<input type="checkbox" id="red" name="red" checked>
 								<label for="red">Красный</label>
 							</li>
 							<li class="filter-list__item filter-list__item--checkbox">
@@ -121,7 +121,7 @@
 						<legend class="filter__parameter">Bluetooth</legend>
 						<ul class="filter__list filter-list">
 							<li class="filter-list__item filter-list__item--radio">
-								<input type="radio" id="bluetooth-true" name="bluetooth" value="true">
+								<input type="radio" id="bluetooth-true" name="bluetooth" value="true" checked>
 								<label for="bluetooth-true">Есть</label>
 							</li>
 							<li class="filter-list__item filter-list__item--radio">
@@ -137,7 +137,7 @@
 			</section>
 
 			<section class="product-cards">
-				<h2 class="product-cards__title">Каталог селфи-палок</h2>
+				<h2 class="product-cards__title visually-hidden">Список селфи-палок</h2>
 
 				<section class="product-cards__sort sort">
 					<h3 class="sort__title">Сортировка:</h3>
@@ -171,8 +171,8 @@
 						<b class="product-cards__price">500 руб.</b>
 						<div class="product-cards__photo-container">
 							<div class="product-cards__actions-list card-actions">
-								<a href="#" class="card-actions__button card-actions__button--to-cart">В корзину</a>
-								<a href="#" class="card-actions__button card-actions__button--to-compare">К сравнению</a>
+								<button type="button" class="card-actions__button card-actions__button--to-cart">В корзину</buttom>
+								<button href="#" class="card-actions__button card-actions__button--to-compare">К сравнению</button>
 							</div>
 							<img src="img/item-1.jpg" width="360" height="380" alt="Самая обычная селфи-палка.">
 						</div>						
@@ -182,8 +182,8 @@
 						<b class="product-cards__price">1 500 руб.</b>
 						<div class="product-cards__photo-container">
 							<div class="product-cards__actions-list card-actions">
-								<a href="#" class="card-actions__button card-actions__button--to-cart">В корзину</a>
-								<a href="#" class="card-actions__button card-actions__button--to-compare">К сравнению</a>
+								<button type="button" class="card-actions__button card-actions__button--to-cart">В корзину</buttom>
+								<button href="#" class="card-actions__button card-actions__button--to-compare">К сравнению</button>
 							</div>
 							<img src="img/item-2.jpg" width="360" height="380" alt="Селфи-палка с продвинутым пультом управления на ручке.">
 						</div>
@@ -193,8 +193,8 @@
 						<b class="product-cards__price">2 500 руб.</b>
 						<div class="product-cards__photo-container">
 							<div class="product-cards__actions-list card-actions">
-								<a href="#" class="card-actions__button card-actions__button--to-cart">В корзину</a>
-								<a href="#" class="card-actions__button card-actions__button--to-compare">К сравнению</a>
+								<button type="button" class="card-actions__button card-actions__button--to-cart">В корзину</buttom>
+								<button href="#" class="card-actions__button card-actions__button--to-compare">К сравнению</button>
 							</div>
 							<img src="img/item-3.jpg" width="360" height="380" alt="Селфи-палка с ручкой-поплавком.">
 						</div>						
@@ -204,8 +204,8 @@
 						<b class="product-cards__price">4 900 руб.</b>
 						<div class="product-cards__photo-container">
 							<div class="product-cards__actions-list card-actions">
-								<a href="#" class="card-actions__button card-actions__button--to-cart">В корзину</a>
-								<a href="#" class="card-actions__button card-actions__button--to-compare">К сравнению</a>
+								<button type="button" class="card-actions__button card-actions__button--to-cart">В корзину</buttom>
+								<button href="#" class="card-actions__button card-actions__button--to-compare">К сравнению</button>
 							</div>
 							<img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка с ручкой в форме человеческой руки.">
 						</div>
@@ -236,7 +236,7 @@
 					<a href="#">Валентин Петухов</a>
 				</li>
 				<li class="actions-list__item actions-list__item--logout">
-					<a href="#">Выйти</a>
+					<button type="button">Выйти</button>
 				</li>
 				<li class="actions-list__item actions-list__item--compare">
 					<a href="#">Сравнить</a>
@@ -261,17 +261,19 @@
 
 			<ul class="footer__social social-list">
 				<li class="social-list__item social-list__item--facebook">
-					<a href="#">Девайс на Фейсбуке</a>
+					<a href="#"><span class="visually-hidden">Девайс на Фейсбуке</span></a>
 				</li>
 				<li class="social-list__item social-list__item--instagram">
-					<a href="#">Девайс в Инстаграме</a>
+					<a href="#"><span class="visually-hidden">Девайс в Инстаграме</span></a>
 				</li>
 				<li class="social-list__item social-list__item--twitter">
-					<a href="#">Девайс в Твиттере</a>
+					<a href="#"><span class="visually-hidden">Девайс в Твиттере</span></a>
 				</li>
 			</ul>
 
-			<a href="https://htmlacademy.ru/intensive/htmlcss" class="footer__copyright">HTML Academy</a>
+			<a href="https://htmlacademy.ru/intensive/htmlcss" class="footer__copyright">
+				<span class="visually-hidden">Разработано для HTML Academy</span>
+			</a>
 
 		</footer>
 
