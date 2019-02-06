@@ -73,15 +73,23 @@
 			<section class="popular">
 				<h2 class="popular__title visually-hidden">Популярные товары</h2>
 
-				<input type="radio" name="slide-btn" id="popular-btn-1" checked>
-				<input type="radio" name="slide-btn" id="popular-btn-2">
-				<input type="radio" name="slide-btn" id="popular-btn-3">
-
-				<div class="popular__navigation popular-nav visually-hidden">
-					<label for="popular-btn-1" class="popular-nav__item">Первый слайд</label>
-					<label for="popular-btn-2" class="popular-nav__item">Второй слайд</label>
-					<label for="popular-btn-3" class="popular-nav__item">Третий слайд</label>
-				</div>
+				<ul class="popular__navigation popular-nav visually-hidden">
+					<li class="popular-nav__item">
+						<button type="submit">
+							Первый слайд
+						</button>
+					</li>
+					<li class="popular-nav__item">
+						<button type="submit">
+							Второй слайд
+						</button>
+					</li>
+					<li class="popular-nav__item">
+						<button type="submit">
+							Третий слайд
+						</button>
+					</li>
+				</ul>
 
 				<ol class="popular__list popular-list">
 					<li class="popular-list__item popular-list__item--current" id="slide1">
@@ -170,15 +178,23 @@
 			<section class="services">
 				<h2 class="services__title visually-hidden">Сервисы</h2>
 				
-				<input type="radio" name="services-btn" id="services-btn-1" checked>
-				<input type="radio" name="services-btn" id="services-btn-2">
-				<input type="radio" name="services-btn" id="services-btn-3">
-
-				<div class="services__navigation services-nav">
-					<label for="services-btn-1" class="services-nav__item">Доставка</label>
-					<label for="services-btn-2" class="services-nav__item">Гарантия</label>
-					<label for="services-btn-3" class="services-nav__item">Оплата</label>
-				</div>
+				<ul class="services__navigation services-nav">
+					<li class="services-nav__item">
+						<button type="button">
+							Доставка
+						</button>
+					</li>
+					<li class="services-nav__item">
+						<button type="button">
+							Гарантия
+						</button>
+					</li>
+					<li class="services-nav__item">
+						<button type="button">
+							Оплата
+						</button>
+					</li>
+				</ul>
 
 				<ul class="services__list">
 					<li class="services__item services__item--current">
@@ -270,7 +286,7 @@
 
 				<form class="write-us__form" method="post" action="https://echo.htmlacademy.ru">
 					<p>
-						<label class="write-us__label"for="client-name">Ваше имя:</label>
+						<label class="write-us__label" for="client-name">Ваше имя:</label>
 						<input name="name" id="client-name" type="text" placeholder="Имя Фамилия">
 					</p>
 					<p>
