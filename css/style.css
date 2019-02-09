@@ -7,7 +7,7 @@
 }
 
 @font-face {
-	font-family: "Open Sans Light";
+	font-family: "Open Sans";
 	src: url("../fonts/opensanslight.woff2") format("woff2"),
 		 url("../fonts/opensanslight.woff") format("woff");
 	font-weight: 300;
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-	font-family: "Gilroy Light";
+	font-family: "Gilroy";
 	src: url("../fonts/gilroylight.woff2") format("woff2"),
 		 url("../fonts/gilroylight.woff") format("woff");
 	font-weight: 300;
@@ -23,9 +23,486 @@
 }
 
 @font-face {
-	font-family: "Gilroy ExtraBold";
+	font-family: "Gilroy";
 	src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
 		 url("../fonts/gilroyextrabold.woff") format("woff");
 	font-weight: 800;
 	font-style: normal;	
+}
+
+body {
+	margin: 0;
+
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 15px;
+	line-height: 30px;
+	font-weight: 300;
+	letter-spacing: 0.01em;
+	color: #464646;
+
+	background-color: #ffffff;
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+.navigation {
+	color: #000000;
+
+	background-color: #f7e296;
+}
+
+.navigation a {
+	color: #000000;
+}
+
+.navigation a:hover {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.navigation a:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.navigation__logo a[href]:hover,
+.main-footer__logo a[href]:hover {
+	opacity: 0.6;
+}
+
+.navigation__logo a[href]:active,
+.main-footer__logo a[href]:active {
+	opacity: 0.3;
+}
+
+.search__field {
+	color: #000000;
+	font-family: inherit;
+	font-weight: inherit;
+
+	background-color: transparent;
+
+	border: none;
+}
+
+.search__field::placeholder {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.navigation__search:hover .search__field::placeholder { 
+	color: rgba(0, 0, 0, 0.6);
+} 
+
+.search__button {
+	visibility: hidden;
+
+	transition: 0.1s;
+
+	color: #000000;
+	font-family: inherit;
+	font-weight: inherit;
+
+	background-color: #f7e296;
+
+	border: none;
+}
+
+.search__button:hover,
+.search__button:focus {
+	visibility: visible;
+}
+
+.search__field:focus {
+	color: #000000;
+}
+
+.search__field:focus + .search__button {
+	visibility: visible;
+
+	color: #000000;
+
+	background-color: #f7e296;
+}
+
+.header-actions {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.header-actions__item a:hover {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.header-actions__item a:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.header-actions__item--logout button {
+	cursor: pointer;
+
+	font: inherit;
+	color: rgba(0, 0, 0, 0.3);
+
+	background-color: transparent;
+
+	border: none;
+}
+
+.nav-catalog__title button {
+	font-family: "Gilroy", Arial, sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+
+	background-color: transparent;
+
+	border: none;
+}
+
+.nav-catalog__title button:hover {
+	cursor: pointer; 
+
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-catalog__title button:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.nav-catalog__list {
+	margin: 0;
+	padding: 0;
+
+	line-height: 36px;
+
+	list-style: none;
+}
+
+.main-nav {
+	margin: 0;
+	padding: 0;
+	
+	font-family: "Gilroy", Arial, sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+
+	list-style: none;
+}
+
+.about,
+.contacts {
+	letter-spacing: 0;
+
+	background-color: #ffffff;
+}
+
+.about__list {
+	list-style: none;
+}
+
+.about__item {
+	font-family: "Gilroy", Arial, sans-serif;
+	font-weight: 800;
+	font-size: 16px;
+	line-height: 40px;
+	color: #000000;
+}
+
+.about__title,
+.contacts__title,
+.inner-page__title {
+	font-family: "Gilroy", Arial, sans-serif;
+	font-weight: 800;
+	font-size: 47px;
+	line-height: 48px;
+	color: #000000;
+}
+
+.button {
+	font-family: "Gilroy", Arial, sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	color: #000000;
+
+	background-color: #f0c52e;
+}
+
+.button:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs {
+	padding: 0;
+	margin: 0;
+
+	list-style: none;
+
+	font-size: 14px;
+	line-height: 24px;
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs__item a {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs__item a[href]:hover {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs__item a[href]:active {
+	color: rgba(0, 0, 0, 0.1);
+}
+
+.filter {
+	background-color: #efefef;
+}
+
+.filter fieldset {
+	border: none;
+}
+
+.filter__title,
+.sort__title {
+	font-family: "Gilroy", Arial, sans-serif;
+	font-weight: 800;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.2em;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.filter__title {
+	background-color: #dbdbdb;
+}
+
+.filter__parameter {
+	font-family: "Gilroy", Arial, sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 24px;
+	color: #000000;
+}
+
+.filter-list {
+	margin: 0;
+
+	list-style: none;
+
+	font-size: 14px;
+	line-height: 40px;
+	color: #000000;
+}
+
+.filter__button {
+	cursor: pointer;
+
+	border: none;
+}
+
+.sort {
+	background-color: #ebebeb;
+}
+
+.sort__list {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: 0;
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.sort__type a {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.sort__type a[href]:hover {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.sort__type a[href]:active {
+	color: rgba(0, 0, 0, 1);
+}
+
+.sort__type--current,
+.sort__type--current a {
+	color: #000000;
+}
+
+.product-cards__list {
+	list-style: none;
+}
+
+.product-cards__name,
+.product-cards__name a {
+	font-family: "Gilroy", Arial, sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 24px;
+	color: #000000;
+}
+
+.product-cards__price {
+	font-family: "Gilroy", Arial, sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 24px;
+
+}
+
+.card-actions__button {
+	cursor: pointer;
+
+	border: none;
+}
+
+.card-actions__button--to-compare {
+	font-size: 13px;
+	line-height: 20px;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.card-actions__button--to-compare:hover {
+	color: rgba(0, 0, 0, 1);
+}
+
+.card-actions__button--to-compare:active {
+	color: rgba(0, 0, 0, 0.2);
+}
+
+.main-footer {
+	color: #ffffff;
+
+	background-color: #464646;
+}
+
+.footer-actions {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+
+	color: #ffffff;
+}
+
+.footer-actions__item a {
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-actions__item a:hover {
+	color: rgba(255, 255, 255, 1);
+}
+
+.footer-actions__item a:active {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-actions__item--logout button {
+	cursor: pointer;
+
+	font: inherit;
+	color: rgba(255, 255, 255, 0.3);
+
+	background-color: transparent;
+
+	border: none;
+}
+
+.footer__shop-address {
+	font-style: normal;
+	letter-spacing: 0;
+}
+
+.footer__shop-phone {
+	color: #ffffff;
+	letter-spacing: 0;
+}
+
+.footer-nav {
+	padding: 0;
+	margin: 0;
+
+	list-style: none;
+
+	font-family: "Gilroy", Arial, sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+.footer-nav__item a {
+	color: #ffffff;
+}
+
+.footer-nav__item a:hover {
+	color: rgba(255, 255, 255, 0.6);
+}
+.footer-nav__item a:active {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.social-list {
+	list-style: none;
+}
+
+.write-us {
+	background-color: #ffffff;
+}
+
+.write-us__label {
+	font-family: "Gilroy", Arial, sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 0;
+	color: #000000;
+}
+
+.write-us__field {
+	background-color: #f2f2f2;
+
+	font: inherit;
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: 0;
+
+	border: none;
+}
+
+.write-us__field:hover {
+	background-color: #eaeaea;
+}
+
+.write-us__field:focus {
+	box-sizing: border-box;
+
+	background-color: #ffffff;
+
+	outline: 3px solid #f7e296;
+}
+
+.modal__send {
+	border: none;
 }
