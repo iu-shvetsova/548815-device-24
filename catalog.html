@@ -3,6 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Девайс</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 
@@ -19,25 +21,19 @@
 				<button type="submit" class="search__button">Найти</button>
 			</form> 
 
-			<ul class="navigation__actions actions-list">
-				<li class="actions-list__item actions-list__item--login">
+			<ul class="navigation__actions header-actions">
+				<li class="header-actions__item header-actions__item--login">
 					<a href="#">Валентин Петухов</a>
 				</li>
-				<li class="actions-list__item actions-list__item--logout">
+				<li class="header-actions__item header-actions__item--logout">
 					<button type="button">Выйти</button>
 				</li>
-				<li class="actions-list__item actions-list__item--compare">
+				<li class="header-actions__item header-actions__item--compare">
 					<a href="#">Сравнить</a>
 				</li>
-				<li class="actions-list__item actions-list__item--cart">
+				<li class="header-actions__item header-actions__item--cart">
 					<a href="#">Корзина</a>
 				</li>
-			</ul>
-
-			<ul class="navigation__main main-nav">
-				<li class="main-nav__item"><a href="#">Доставка</a></li>
-				<li class="main-nav__item"><a href="#">Гарантия</a></li>
-				<li class="main-nav__item"><a href="#">Контакты</a></li>
 			</ul>
 
 			<section class="navigation__catalog nav-catalog">
@@ -65,6 +61,12 @@
 				</ul>
 
 			</section>
+
+			<ul class="navigation__main main-nav">
+				<li class="main-nav__item"><a href="#">Доставка</a></li>
+				<li class="main-nav__item"><a href="#">Гарантия</a></li>
+				<li class="main-nav__item"><a href="#">Контакты</a></li>
+			</ul>
 
 		</nav>
 
@@ -131,7 +133,7 @@
 						</ul>
 					</fieldset>		
 
-					<button type="submit" class="filter__button">Показать</button>		
+					<button type="submit" class="filter__button button">Показать</button>		
 				</form>
 
 			</section>
@@ -143,7 +145,7 @@
 					<h3 class="sort__title">Сортировка:</h3>
 					
 					<ul class="sort__list">
-						<li class="sort__type">
+						<li class="sort__type sort__type--current">
 							<a>По цене</a>
 						</li>
 						<li class="sort__type">
@@ -156,10 +158,10 @@
 
 					<ul class="sort__list">
 						<li class="sort__type sort__type--arrow">
-							<a>По возрастанию</a>
+							<a href="#">По возрастанию</a>
 						</li>
-						<li class="sort__type sort__type--arrow">
-							<a href="#">По убыванию</a>
+						<li class="sort__type sort__type--arrow sort__type--current">
+							<a>По убыванию</a>
 						</li>
 					</ul>
 
@@ -171,7 +173,7 @@
 						<b class="product-cards__price">500 руб.</b>
 						<div class="product-cards__photo-container">
 							<div class="product-cards__actions-list card-actions">
-								<button type="button" class="card-actions__button card-actions__button--to-cart">В корзину</buttom>
+								<button type="button" class="card-actions__button card-actions__button--to-cart button">В корзину</buttom>
 								<button type="button" class="card-actions__button card-actions__button--to-compare">К сравнению</button>
 							</div>
 							<img src="img/item-1.jpg" width="360" height="380" alt="Самая обычная селфи-палка.">
@@ -182,7 +184,7 @@
 						<b class="product-cards__price">1 500 руб.</b>
 						<div class="product-cards__photo-container">
 							<div class="product-cards__actions-list card-actions">
-								<button type="button" class="card-actions__button card-actions__button--to-cart">В корзину</buttom>
+								<button type="button" class="card-actions__button card-actions__button--to-cart button">В корзину</buttom>
 								<button type="button" class="card-actions__button card-actions__button--to-compare">К сравнению</button>
 							</div>
 							<img src="img/item-2.jpg" width="360" height="380" alt="Селфи-палка с продвинутым пультом управления на ручке.">
@@ -193,7 +195,7 @@
 						<b class="product-cards__price">2 500 руб.</b>
 						<div class="product-cards__photo-container">
 							<div class="product-cards__actions-list card-actions">
-								<button type="button" class="card-actions__button card-actions__button--to-cart">В корзину</buttom>
+								<button type="button" class="card-actions__button card-actions__button--to-cart button">В корзину</buttom>
 								<button type="button" class="card-actions__button card-actions__button--to-compare">К сравнению</button>
 							</div>
 							<img src="img/item-3.jpg" width="360" height="380" alt="Селфи-палка с ручкой-поплавком.">
@@ -204,7 +206,7 @@
 						<b class="product-cards__price">4 900 руб.</b>
 						<div class="product-cards__photo-container">
 							<div class="product-cards__actions-list card-actions">
-								<button type="button" class="card-actions__button card-actions__button--to-cart">В корзину</buttom>
+								<button type="button" class="card-actions__button card-actions__button--to-cart button">В корзину</buttom>
 								<button type="button" class="card-actions__button card-actions__button--to-compare">К сравнению</button>
 							</div>
 							<img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка с ручкой в форме человеческой руки.">
@@ -231,17 +233,17 @@
 				</a>
 			</div>  
 			
-			<ul class="main-footer__actions actions-list">
-				<li class="actions-list__item actions-list__item--login">
+			<ul class="main-footer__actions footer-actions">
+				<li class="footer-actions__item footer-actions__item--login">
 					<a href="#">Валентин Петухов</a>
 				</li>
-				<li class="actions-list__item actions-list__item--logout">
+				<li class="footer-actions__item footer-actions__item--logout">
 					<button type="button">Выйти</button>
 				</li>
-				<li class="actions-list__item actions-list__item--compare">
+				<li class="footer-actions__item footer-actions__item--compare">
 					<a href="#">Сравнить</a>
 				</li>
-				<li class="actions-list__item actions-list__item--cart">
+				<li class="footer-actions__item footer-actions__item--cart">
 					<a href="#">Корзина</a>
 				</li>
 			</ul>
