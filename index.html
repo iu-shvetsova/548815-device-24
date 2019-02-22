@@ -78,173 +78,179 @@
 			<section class="popular">
 				<h2 class="popular__title visually-hidden">Популярные товары</h2>
 
-				<ul class="popular__navigation popular-nav">
-					<li class="popular-nav__item">
-						<button type="submit">
-							Первый слайд
-						</button>
-					</li>
-					<li class="popular-nav__item">
-						<button type="submit">
-							Второй слайд
-						</button>
-					</li>
-					<li class="popular-nav__item">
-						<button type="submit">
-							Третий слайд
-						</button>
-					</li>
-				</ul>
-
 				<ol class="popular__list popular-list">
 					<li class="popular-list__item popular-list__item--current" id="slide1">
 						<div class="popular-list__image">
 							<img src="img/slider-1.png" width="384" height="486" alt="Длинная селфи-палка с триногой.">
 						</div>
-						<b class="popular-list__slogan">Делай селфи, как Бен Стиллер!</b>
-						<p class="popular-list__about">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-						<table class="popular-list__table">
-							<tr>
-								<td>Длина палки</td>
-								<td>8,5 м</td>
-							</tr>
-							<tr>
-								<td>Вес палки</td>
-								<td>5 кг</td>
-							</tr>
-							<tr>
-								<td>Материал</td>
-								<td>Карбон</td>
-							</tr>
-						</table>
-						<a class="popular-list__more button" href="#">Подробнее</a>
-
+						<div class="popular-list__info">
+							<b class="popular-list__slogan">Делай селфи,<br> как Бен Стиллер!</b>
+							<p class="popular-list__about">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+							<table class="popular-list__table">
+								<tr>				
+									<td>8,5 м</td>
+									<td>Длина палки</td>
+								</tr>
+								<tr>				
+									<td>5 кг</td>
+									<td>Вес палки</td>
+								</tr>
+								<tr>				
+									<td>Карбон</td>
+									<td>Материал</td>
+								</tr>
+							</table>
+							<a class="popular-list__more button" href="#">Подробнее</a>
+						</div>
 					</li>
 					<li class="popular-list__item" id="slide2">
 						<div class="popular-list__image">
 							<img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет с мотивирующей фразой на дисплее.">
 						</div>
-						<b class="popular-list__slogan">Худеем правильно!</b>
-						<p class="popular-list__about">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>					
-						<table class="popular-list__table">
-							<tr>
-								<td>Без подзарядки</td>
-								<td>48 часов</td>
-							</tr>
-						</table>
-						<a class="popular-list__more button" href="#">Подробнее</a>
+						<div class="popular-list__info">
+							<b class="popular-list__slogan">Худеем<br> правильно!</b>
+							<p class="popular-list__about">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>					
+							<table class="popular-list__table">
+								<tr>
+									<td>48 часов</td>
+									<td>Без подзарядки</td>
+								</tr>
+							</table>
+							<a class="popular-list__more button" href="#">Подробнее</a>
+						</div>
 					</li>
 					<li class="popular-list__item" id="slide3">
 						<div class="popular-list__image">
 							<img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер с лазером в виде камеры.">
 						</div>
-						<b class="popular-list__slogan">Порхает как бабочка, жалит как пчела!</b>
-						<p class="popular-list__about">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-						<table class="popular-list__table">
-							<tr>
-								<td>Дальность полета</td>
-								<td>800 м</td>
-							</tr>
-							<tr>
-								<td>Радиус поражения</td>
-								<td>50 м</td>
-							</tr>
-						</table>
-						<a class="popular-list__more button" href="#">Подробнее</a>
+						<div class="popular-list__info">
+							<b class="popular-list__slogan">Порхает как бабочка, жалит как пчела!</b>
+							<p class="popular-list__about">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+							<table class="popular-list__table">
+								<tr>
+									<td>800 м</td>
+									<td>Дальность полета</td>
+								</tr>
+								<tr>
+									<td>50 м</td>
+									<td>Радиус поражения</td>
+								</tr>
+							</table>
+							<a class="popular-list__more button" href="#">Подробнее</a>
+						</div>
 					</li>
 				</ol>
+
+				<ul class="popular__navigation popular-nav">
+					<li class="popular-nav__item popular-nav__item--current">
+						<button type="submit">
+							<span class="visually-hidden">Первый слайд</span>
+						</button>
+					</li>
+					<li class="popular-nav__item">
+						<button type="submit">
+							<span class="visually-hidden">Второй слайд</span>
+						</button>
+					</li>
+					<li class="popular-nav__item">
+						<button type="submit">
+							<span class="visually-hidden">Третий слайд</span>
+						</button>
+					</li>
+				</ul>
 
 			</section>
 
 			<section class="catalog">
 				<h2 class="catalog__title visually-hidden">Каталог товаров</h2>
 				<ul class="catalog__list">
-					<li class="catalog__item">
+					<li class="catalog__item catalog__item--vr">
 						<a href="#">Виртуальная реальность</a>
 					</li>
-					<li class="catalog__item">
-						<a href="catalog.html">Моноподы для селфи</a>
+					<li class="catalog__item catalog__item--selfie">			
+						<a href="catalog.html">Моноподы<br> для селфи</a>
 					</li>
-					<li class="catalog__item">
+					<li class="catalog__item catalog__item--action-camera">
 						<a href="#">Экшн-камеры</a>
 					</li>
-					<li class="catalog__item">
+					<li class="catalog__item catalog__item--bracelet">
 						<a href="#">Фитнес-браслеты</a>
 					</li>
-					<li class="catalog__item">
+					<li class="catalog__item catalog__item--smart-watch">
 						<a href="#">Умные часы</a>
 					</li>
-					<li class="catalog__item">
+					<li class="catalog__item catalog__item--copter">
 						<a href="#">Квадрокоптеры</a>
 					</li>
 				</ul>
 			</section>
 
 			<section class="services">
-				<h2 class="services__title visually-hidden">Сервисы</h2>
-				
-				<ul class="services__navigation services-nav">
-					<li class="services-nav__item services-nav__item--current">
-						<button type="button">
-							Доставка
-						</button>
-					</li>
-					<li class="services-nav__item">
-						<button type="button">
-							Гарантия
-						</button>
-					</li>
-					<li class="services-nav__item">
-						<button type="button">
-							Оплата
-						</button>
-					</li>
-				</ul>
+				<div class="services__wrapper">
+					<h2 class="services__title visually-hidden">Сервисы</h2>
+					
+					<ul class="services__navigation services-nav">
+						<li class="services-nav__item">
+							<button class="button services-nav__button services-nav__button--current" type="button">
+								Доставка
+							</button>
+						</li>
+						<li class="services-nav__item">
+							<button class="button services-nav__button" type="button">
+								Гарантия
+							</button>
+						</li>
+						<li class="services-nav__item">
+							<button class="button services-nav__button" type="button">
+								Кредит
+							</button>
+						</li>
+					</ul>
 
-				<ul class="services__list">
-					<li class="services__item services__item--current">
-						<h3 class="services__subtitle">Доставка</h3>
-						<p class="services__description">
-							Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
-						</p>
-					</li>
-					<li class="services__item">
-						<h3 class="services__subtitle">Гарантия</h3>
-						<p class="services__description">
-							Если из-за возгарания купленного у нас товара у нас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
-						</p>
-					</li>
-					<li class="services__item">
-						<h3 class="services__subtitle">Кредит</h3>
-						<p class="services__description">
-							Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
-						</p>
-					</li>
-				</ul>
-
+					<ul class="services__list">
+						<li class="services__item services__item--current services__item--delivery">
+							<h3 class="services__subtitle">Доставка</h3>
+							<p class="services__description">
+								Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+							</p>
+						</li>
+						<li class="services__item services__item--warranty">
+							<h3 class="services__subtitle">Гарантия</h3>
+							<p class="services__description">
+								Если из-за возгарания купленного у нас товара у нас сгорит дом — не переживайте, мы выдадим вам новый.<br> Товар, не дом, конечно же.
+							</p>
+						</li>
+						<li class="services__item services__item--credit">
+							<h3 class="services__subtitle">Кредит</h3>
+							<p class="services__description">
+								Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
+							</p>
+						</li>
+					</ul>
+				</div>
 			</section>
 
 			<section class="companies">
 				<h2 class="companies__title visually-hidden">Производители</h2>
 				<ul class="companies__list">
 					<li class="companies__item">
-						<a href="#">
-							<img src="img/logo-1-mod.jpg" width="260" height="100" alt="DJI">
+						<a class="companies__link" href="#">
+							<img class="companies__image" src="img/logo-1-mod.jpg" width="260" height="100" alt="DJI">
 						</a>
 					</li>
 					<li class="companies__item">
-						<a href="#">
-							<img src="img/logo-2-mod.jpg" width="260" height="100" alt="SP Gadgets">
+						<a class="companies__link" href="#">
+							<img class="companies__image" src="img/logo-2-mod.jpg" width="260" height="100" alt="SP Gadgets">
 						</a>
 					</li>
 					<li class="companies__item">
-						<a href="#">
-							<img src="img/logo-3-mod.jpg" width="260" height="100" alt="GoPro">
+						<a class="companies__link" href="#">
+							<img class="companies__image" src="img/logo-3-mod.jpg" width="260" height="100" alt="GoPro">
 						</a>
 					</li>
 					<li class="companies__item">
-						<a href="#">
-							<img src="img/logo-4-mod.jpg" width="260" height="100" alt="VIVE">
+						<a class="companies__link" href="#">
+							<img class="companies__image" src="img/logo-4-mod.jpg" width="260" height="100" alt="VIVE">
 						</a>
 					</li>
 				</ul>
@@ -301,9 +307,9 @@
 						<label class="write-us__label" for="client-email">Ваш e-mail:</label>
 						<input class="write-us__field" name="email" id="client-email" type="text" placeholder="email@example.com">
 					</p>
-					<p>
+					<p class="write-us__textarea">
 						<label class="write-us__label" for="client-message">Текст письма:</label>
-						<textarea class="write-us__field" name="message" id="client-message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+						<textarea class="write-us__field" name="message" id="client-message" cols="100" rows="5" placeholder="В свободной форме"></textarea>
 					</p>
 
 					<button class="modal__send button" type="submit">Отправить</button>
