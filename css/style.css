@@ -1586,9 +1586,15 @@ button.services-nav__button--current {
 }
 
 .product-cards__photo-container:hover > .product-cards__actions-list,
-.product-cards__photo-container:focus > .product-cards__actions-list {
+.product-cards__photo-container:focus > .product-cards__actions-list,
+.product-cards__photo-container:focus-within > .product-cards__actions-list {
 	visibility: visible;
 }
+
+/*.product-cards__actions-list:hover,
+.product-cards__actions-list:focus {
+	visibility: visible;
+}*/
 
 .product-cards__name {
 	width: 260px;
