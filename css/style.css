@@ -1567,6 +1567,36 @@ button.services-nav__button--current {
 	margin-bottom: 0;
 }
 
+.product-cards__item--new {
+	position: relative;
+}
+
+.product-cards__item--new::after {
+	content: "New";
+
+	position: absolute;
+	top: 29px;
+	right: 27px;
+
+	box-sizing: border-box;
+
+	width: 60px;
+	height: 60px;
+	padding-top: 17px;
+	padding-left: 12px;
+
+	font-family: "Gilroy", Arial, sans-serif;
+	font-weight: 800;
+	font-size: 14px;
+	line-height: 24px;
+	color: rgba(0, 0, 0, 0.2);
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+
+	border-radius: 50%;
+	border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
 .card-wrapper {
 	order: 2;
 
@@ -1590,11 +1620,6 @@ button.services-nav__button--current {
 .product-cards__photo-container:focus-within > .product-cards__actions-list {
 	visibility: visible;
 }
-
-/*.product-cards__actions-list:hover,
-.product-cards__actions-list:focus {
-	visibility: visible;
-}*/
 
 .product-cards__name {
 	width: 260px;
@@ -2021,11 +2046,23 @@ button.services-nav__button--current {
 }
 
 .modal {
-	position: relative;
+	display: none;
+
+	position: fixed;
+	top: 50%;
+	left: 50%;
+
+	transform: translate(-50%, -50%);
 
 	box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
 
 	z-index: 100; /* чтоб наверняка */
+}
+
+.modal-show {
+	display: block;
+
+	animation: appearance 0.5s;
 }
 
 .modal__close {
@@ -2041,7 +2078,8 @@ button.services-nav__button--current {
 	border: none;
 
 	opacity: 0.5;
-
+	
+	background-color: transparent;
 	background-image: url(../img/modal-close.svg);
 	background-repeat: no-repeat;
 }
@@ -2055,14 +2093,6 @@ button.services-nav__button--current {
 }
 
 .write-us {
-	display: none;
-
-	position: fixed;
-	top: 50%;
-	left: 50%;
-
-	transform: translate(-50%, -50%);
-
 	box-sizing: border-box;
 
 	width: 960px;
@@ -2141,6 +2171,14 @@ button.services-nav__button--current {
 	outline: 3px solid #f7e296;
 }
 
+.invalid {
+	outline: none;
+
+	color: rgba(0, 0, 0, 0.4);
+
+	background-color: #f6dada;
+}
+
 .modal__send {
 	cursor: pointer;
 
@@ -2150,14 +2188,6 @@ button.services-nav__button--current {
 }
 
 .map {
-	display: none;
-	
-	position: fixed;
-	top: 50%;
-	left: 50%;
-
-	transform: translate(-50%, -50%);
-
 	width: 960px;
 	height: 555px;
 
@@ -2180,3 +2210,32 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+@keyframes appearance {
+	0% { 
+		transform: translate(-50%, -50%) translate(0, -1000px);
+		opacity: 0; 
+	}
+	70% { 
+		transform: translate(-50%, -50%) translate(0, 30px);
+		opacity: 0.9; 
+	}
+	80% { 
+		transform: translate(-50%, -50%) translate(0, -20px);
+		opacity: 1; 
+	}
+	100% { 
+		transform: translate(-50%, -50%) translate(0, 0);
+		opacity: 1; 
+	}
+}
+
+
+
+
+
+
+
+
+
+
