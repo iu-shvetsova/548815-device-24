@@ -1,16 +1,23 @@
 var modalForm = document.querySelector(".write-us");
 var modalMap = document.querySelector(".map");
-var close = document.querySelectorAll(".modal__close");
 var openForm = document.querySelector(".contacts__more");
 var openMap = document.querySelector(".contacts__map");
 var form = modalForm.querySelector("form");
+var inputName = modalForm.querySelector("[name=name]");
+var inputEmail = modalForm.querySelector("[name=email]");
+
+document.querySelectorAll('.modal__close').forEach(function(closeBtn) {
+	closeBtn.addEventListener('click', function() {
+    	closeBtn.closest('.modal').classList.remove('modal-show');
+	});
+});
 
 openForm.addEventListener("click", function(evt) {
 	evt.preventDefault();
 	modalForm.classList.add("modal-show");
 	modalForm.querySelector("[name=name]").value="";
 	modalForm.querySelector("[name=email]").value="";
-	modalForm.querySelector("[name=name]").focus();
+	inputName.focus();
 });
 
 openMap.addEventListener("click", function(evt) {
@@ -18,36 +25,26 @@ openMap.addEventListener("click", function(evt) {
 	modalMap.classList.add("modal-show");
 });
 
-close[0].addEventListener("click", function(evt) {
-	evt.preventDefault();
-	modalForm.classList.remove("modal-show");
-});
-
-close[1].addEventListener("click", function(evt) {
-	evt.preventDefault();
-	modalMap.classList.remove("modal-show");
-});
-
 form.addEventListener("submit", function(evt) {
-	if (!modalForm.querySelector("[name=name]").value || !modalForm.querySelector("[name=password]").value) {
+	if (!inputName.value || !inputEmail.value) {
 		evt.preventDefault();
-		if (!modalForm.querySelector("[name=name]").value) {
-			modalForm.querySelector("[name=name]").classList.add("invalid");
+		if (!inputName.value) {
+			inputName.classList.add("invalid");
 		}
-		if (!modalForm.querySelector("[name=email]").value) {
-			modalForm.querySelector("[name=email]").classList.add("invalid");
+		if (!inputEmail.value) {
+			inputEmail.classList.add("invalid");
 		}
 	}
 });
 
-modalForm.querySelector("[name=name]").addEventListener("click", function(evt) {
-	if (modalForm.querySelector("[name=name]").value != "") {
-		modalForm.querySelector("[name=name]").classList.remove("invalid");
+inputName.addEventListener("blur", function(evt) {
+	if (inputName.value != "") {
+		inputName.classList.remove("invalid");
 	}
 });
 
-modalForm.querySelector("[name=email]").addEventListener("click", function(evt) {
-	if (modalForm.querySelector("[name=email]").value != "") {
-		modalForm.querySelector("[name=email]").classList.remove("invalid");
+inputEmail.addEventListener("blur", function(evt) {
+	if (inputEmail.value != "") {
+		inputEmail.classList.remove("invalid");
 	}
 });
