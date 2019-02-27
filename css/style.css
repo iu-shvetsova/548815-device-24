@@ -2193,6 +2193,18 @@ button.services-nav__button--current {
 
 }
 
+.map__image img {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	z-index: -1;
+}
+
+.map__image iframe {
+	z-index: 1;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
