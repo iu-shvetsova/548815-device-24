@@ -18,7 +18,8 @@
 				
 				<div class="nav-wrapper-top">
 					<form class="navigation__search search" method="get" action="https://echo.htmlacademy.ru">
-						<input class="search__field" type="search" name="search" placeholder="Поиск по сайту">
+						<label for="search" class="visually-hidden">Поиск:</label>
+						<input class="search__field" type="search" name="search" id="search" placeholder="Поиск по сайту">
 						<button type="submit" class="search__button">Найти</button>
 					</form> 
 
@@ -40,7 +41,9 @@
 
 				<div class="nav-wrapper-bottom">
 					<section class="navigation__catalog nav-catalog">
-						<h2 class="nav-catalog__title"> <button type="button">Каталог товаров</button> </h2>
+						<a class="nav-catalog__link" href="#">
+							<h2 class="nav-catalog__title">Каталог товаров</h2>
+						</a>
 
 						<div class="nav-catalog__wrapper">
 							<ul class="nav-catalog__list">
