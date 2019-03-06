@@ -34,6 +34,9 @@ form.addEventListener("submit", function(evt) {
 		if (!inputEmail.value) {
 			inputEmail.classList.add("invalid");
 		}
+		modalForm.classList.remove("modal-error");
+		modalForm.offsetWidth = modalForm.offsetWidth;
+		modalForm.classList.add("modal-error");
 	}
 });
 
