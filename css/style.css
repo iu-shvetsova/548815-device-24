@@ -128,7 +128,9 @@ a {
 	top: 50%;
 	left: 4px;
 
-	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+
+	        transform: translateY(-50%);
 
 	width: 16px;
 	height: 16px;
@@ -157,8 +159,32 @@ a {
 	border: none;
 }
 
+.search__field::-webkit-input-placeholder {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.search__field:-ms-input-placeholder {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.search__field::-ms-input-placeholder {
+	color: rgba(0, 0, 0, 0.3);
+}
+
 .search__field::placeholder {
 	color: rgba(0, 0, 0, 0.3);
+}
+
+.navigation__search:hover .search__field::-webkit-input-placeholder { 
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.navigation__search:hover .search__field:-ms-input-placeholder { 
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.navigation__search:hover .search__field::-ms-input-placeholder { 
+	color: rgba(0, 0, 0, 0.6);
 }
 
 .navigation__search:hover .search__field::placeholder { 
@@ -269,7 +295,9 @@ a {
 	/*left: 0;*/
 	right: 100%;
 
-	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+
+	        transform: translateY(-50%);
 	margin-top: -1px;
 
 	width: 15px;
@@ -384,7 +412,9 @@ a {
 	top: 50%;
 	right: 5px;
 
-	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+
+	        transform: translateY(-50%);
 
 	width: 16px;
 	height: 16px;
@@ -480,7 +510,8 @@ a {
 }
 
 .popular-nav {
-	transform: translate(1000px, -203px);
+	-webkit-transform: translate(1000px, -203px);
+	        transform: translate(1000px, -203px);
 
 	display: flex;
 	flex-wrap: wrap;
@@ -924,12 +955,14 @@ button.services-nav__button--current {
 }
 
 .companies__image {
-	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	        filter: grayscale(100%);
 	opacity: 0.2;
 }
 
 .companies__link:hover .companies__image {
-	filter: grayscale(0);
+	-webkit-filter: grayscale(0);
+	        filter: grayscale(0);
 	opacity: 1;
 }
 
@@ -1009,7 +1042,9 @@ button.services-nav__button--current {
 	top: 50%;
 	left: 0;
 
-	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+
+	        transform: translateY(-50%);
 
 	width: 8px;
 	height: 8px;
@@ -1025,7 +1060,9 @@ button.services-nav__button--current {
 	top: 50%;
 	left: 2px;
 
-	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+
+	        transform: translateY(-50%);
 
 	width: 4px;
 	height: 4px;
@@ -1144,7 +1181,9 @@ button.services-nav__button--current {
 	top: 50%;
 	left: 100%;
 
-	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+
+	        transform: translateY(-50%);
 
 	width: 4px;
 	height: 7px;
@@ -1346,7 +1385,9 @@ button.services-nav__button--current {
 	top: 50%;
 	left: -41px;
 
-	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+
+	        transform: translateY(-50%);
 
 	width: 27px;
 	height: 23px;
@@ -1401,7 +1442,9 @@ button.services-nav__button--current {
 	top: 50%;
 	left: -42px;
 
-	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+
+	        transform: translateY(-50%);
 
 	width: 25px;
 	height: 25px;
@@ -1865,7 +1908,9 @@ button.services-nav__button--current {
 	top: 50%;
 	right: 100%;
 
-	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+
+	        transform: translateY(-50%);
 
 	width: 15px;
 	height: 15px;
@@ -2072,7 +2117,9 @@ button.services-nav__button--current {
 	top: 50%;
 	left: 50%;
 
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+
+	        transform: translate(-50%, -50%);
 
 	box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
 
@@ -2082,11 +2129,14 @@ button.services-nav__button--current {
 .modal-show {
 	display: block;
 
-	animation: appearance 0.5s;
+	-webkit-animation: appearance 0.5s;
+
+	        animation: appearance 0.5s;
 }
 
 .modal-error {
-	animation: shake 0.5s;
+	-webkit-animation: shake 0.5s;
+	        animation: shake 0.5s;
 }
 
 .modal__close {
@@ -2242,38 +2292,85 @@ input[type="radio"].visually-hidden {
 
   white-space: nowrap;
 
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
-@keyframes appearance {
+@-webkit-keyframes appearance {
 	0% { 
-		transform: translate(-50%, -50%) translate(0, -1000px);
+		-webkit-transform: translate(-50%, -50%) translate(0, -1000px); 
+		        transform: translate(-50%, -50%) translate(0, -1000px);
 		opacity: 0; 
 	}
 	70% { 
-		transform: translate(-50%, -50%) translate(0, 30px);
+		-webkit-transform: translate(-50%, -50%) translate(0, 30px); 
+		        transform: translate(-50%, -50%) translate(0, 30px);
 		opacity: 0.9; 
 	}
 	80% { 
-		transform: translate(-50%, -50%) translate(0, -20px);
+		-webkit-transform: translate(-50%, -50%) translate(0, -20px); 
+		        transform: translate(-50%, -50%) translate(0, -20px);
 		opacity: 1; 
 	}
 	100% { 
-		transform: translate(-50%, -50%) translate(0, 0);
+		-webkit-transform: translate(-50%, -50%) translate(0, 0); 
+		        transform: translate(-50%, -50%) translate(0, 0);
 		opacity: 1; 
+	}
+}
+
+@keyframes appearance {
+	0% { 
+		-webkit-transform: translate(-50%, -50%) translate(0, -1000px); 
+		        transform: translate(-50%, -50%) translate(0, -1000px);
+		opacity: 0; 
+	}
+	70% { 
+		-webkit-transform: translate(-50%, -50%) translate(0, 30px); 
+		        transform: translate(-50%, -50%) translate(0, 30px);
+		opacity: 0.9; 
+	}
+	80% { 
+		-webkit-transform: translate(-50%, -50%) translate(0, -20px); 
+		        transform: translate(-50%, -50%) translate(0, -20px);
+		opacity: 1; 
+	}
+	100% { 
+		-webkit-transform: translate(-50%, -50%) translate(0, 0); 
+		        transform: translate(-50%, -50%) translate(0, 0);
+		opacity: 1; 
+	}
+}
+
+@-webkit-keyframes shake {
+	0%, 100% {
+		-webkit-transform: translate(-50%, -50%) translateX(0);
+		        transform: translate(-50%, -50%) translateX(0);
+	}
+	10%, 30%, 50%, 70%, 90% {
+		-webkit-transform: translate(-50%, -50%) translateX(-10px);
+		        transform: translate(-50%, -50%) translateX(-10px);
+	}
+	20%, 40%, 60%, 80% {
+		-webkit-transform: translate(-50%, -50%) translateX(10px);
+		        transform: translate(-50%, -50%) translateX(10px);
 	}
 }
 
 @keyframes shake {
 	0%, 100% {
-		transform: translate(-50%, -50%) translateX(0);
+		-webkit-transform: translate(-50%, -50%) translateX(0);
+		        transform: translate(-50%, -50%) translateX(0);
 	}
 	10%, 30%, 50%, 70%, 90% {
-		transform: translate(-50%, -50%) translateX(-10px);
+		-webkit-transform: translate(-50%, -50%) translateX(-10px);
+		        transform: translate(-50%, -50%) translateX(-10px);
 	}
 	20%, 40%, 60%, 80% {
-		transform: translate(-50%, -50%) translateX(10px);
+		-webkit-transform: translate(-50%, -50%) translateX(10px);
+		        transform: translate(-50%, -50%) translateX(10px);
 	}
 }
