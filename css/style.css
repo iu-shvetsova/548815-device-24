@@ -612,8 +612,7 @@ a {
 	background-image: linear-gradient(to bottom, #f7e296 115px, transparent 115px);
 }
 
-.popular-list__item:nth-child(2),
-.popular-list__item:nth-child(3) {
+.popular-list__item--hidden {
 	position: absolute;
 	visibility: hidden;
 }
