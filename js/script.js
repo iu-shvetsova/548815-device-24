@@ -6,6 +6,10 @@ var form = modalForm.querySelector("form");
 var inputName = modalForm.querySelector("[name=name]");
 var inputEmail = modalForm.querySelector("[name=email]");
 
+var servicesButton = document.querySelectorAll(".services-nav__button");
+var servicesItem = document.querySelectorAll(".services__item");
+
+
 document.querySelectorAll('.modal__close').forEach(function(closeBtn) {
 	closeBtn.addEventListener('click', function() {
     	closeBtn.closest('.modal').classList.remove('modal-show');
@@ -51,3 +55,13 @@ inputEmail.addEventListener("blur", function(evt) {
 		inputEmail.classList.remove("invalid");
 	}
 });
+
+var i;
+var servicesLength = servicesItem.length;
+
+for (i = 0; i < servicesLength; i++) {
+	servicesButton[i].addEventListener("click", function(evt) {
+		console.log(i);
+	});
+
+}
